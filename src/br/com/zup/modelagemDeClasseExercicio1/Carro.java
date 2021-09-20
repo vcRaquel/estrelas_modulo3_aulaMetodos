@@ -14,9 +14,9 @@ public class Carro {
     String cor;
     double valor;
 
-//    public Carro(){
-//
-//    }
+    public Carro(){
+
+    }
 
     public Carro(String nome, double peso, String fabricante, String cor, double valor) {
         this.nome = nome;
