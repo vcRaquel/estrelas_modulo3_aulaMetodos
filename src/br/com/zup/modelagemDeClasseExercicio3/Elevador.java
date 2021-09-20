@@ -1,8 +1,7 @@
 
 
 
-//- Sai : para remover uma pessoa do elevador (só deve remover se houver alguém
-//dentro dele);
+
 //- Sobe : para subir um andar (não deve subir se já estiver no último andar);
 //- Desce : para descer um andar (não deve descer se já estiver no térreo);
 package br.com.zup.modelagemDeClasseExercicio3;
@@ -36,6 +35,20 @@ public class Elevador {
             System.out.println("Não é possível a entrada de " + pessoaEntra + " pessoa(s)");
             System.out.println("Já existem " + numeroPessoas + " pessoa(s) no elevador");
             System.out.println("O limite de capacidade é de " + capacidadePessoas + " pessoa(s)");
+            System.out.println("------------------------------------------------------------------");
+        }
+    }
+    //- Sai : para remover uma pessoa do elevador (só deve remover se houver alguém
+//dentro dele);
+    public void sai(int pessoaSai){
+        if (numeroPessoas >0 ){
+            if (numeroPessoas >= pessoaSai){
+                numeroPessoas -= pessoaSai;
+            }else {
+                System.out.println("O número de pessoas informado " + "("+ pessoaSai + ")" + " é maior do que o número de pessoas no elevador");
+            }
+        }else{
+            System.out.println("O elevador está vazio, não existem pessoas para sair");
         }
     }
 
