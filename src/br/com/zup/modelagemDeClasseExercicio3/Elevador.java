@@ -2,7 +2,7 @@
 
 
 
-//- Sobe : para subir um andar (não deve subir se já estiver no último andar);
+
 //- Desce : para descer um andar (não deve descer se já estiver no térreo);
 package br.com.zup.modelagemDeClasseExercicio3;
 //Crie uma classe denominada Elevador para armazenar as informações de um
@@ -46,9 +46,24 @@ public class Elevador {
                 numeroPessoas -= pessoaSai;
             }else {
                 System.out.println("O número de pessoas informado " + "("+ pessoaSai + ")" + " é maior do que o número de pessoas no elevador");
+                System.out.println("-----------------------------------------------------------------------------------------------------------");
             }
         }else{
             System.out.println("O elevador está vazio, não existem pessoas para sair");
+            System.out.println("-------------------------------------------------------");
+        }
+    }
+    //- Sobe : para subir um andar (não deve subir se já estiver no último andar);
+    public void sobe(int andar){
+        if (andarAtual < totalAndares){
+            if (andarAtual + andar < totalAndares){
+                andarAtual += andar;
+            } else{
+                System.out.println("Não é possível subir a quantidade de " + andar + " andares");
+                System.out.println("O total de andares do edifício é de " + totalAndares + " andares");
+                System.out.println("Como estamos no andar " + andarAtual+ " essa solicitação extrapolaria a quantidade de andares disponíveis.");
+                System.out.println("--------------------------------------------------------------------------------------------------------------");
+            }
         }
     }
 

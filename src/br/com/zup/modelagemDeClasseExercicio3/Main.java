@@ -16,6 +16,11 @@ public class Main {
         edificio1.mostraDados();
         edificio1.sai(2);
 
+        //testando método sobe
+        edificio1.sobe(5);
+        edificio1.mostraDados();
+
+        edificio1.sobe(10);
 
     }
 }
