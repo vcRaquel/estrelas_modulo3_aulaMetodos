@@ -22,5 +22,11 @@ public class Main {
 
         edificio1.sobe(10);
 
+        //testando método desce
+        edificio1.desce(3);
+        edificio1.mostraDados();
+
+        edificio1.desce(5);
+
     }
 }

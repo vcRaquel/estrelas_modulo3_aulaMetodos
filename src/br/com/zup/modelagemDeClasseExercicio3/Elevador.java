@@ -3,7 +3,7 @@
 
 
 
-//- Desce : para descer um andar (não deve descer se já estiver no térreo);
+
 package br.com.zup.modelagemDeClasseExercicio3;
 //Crie uma classe denominada Elevador para armazenar as informações de um
 //elevador dentro de um prédio. A classe deve armazenar o andar atual (térreo = 0),
@@ -63,6 +63,17 @@ public class Elevador {
                 System.out.println("O total de andares do edifício é de " + totalAndares + " andares");
                 System.out.println("Como estamos no andar " + andarAtual+ " essa solicitação extrapolaria a quantidade de andares disponíveis.");
                 System.out.println("--------------------------------------------------------------------------------------------------------------");
+            }
+        }
+    }
+    //- Desce : para descer um andar (não deve descer se já estiver no térreo);
+    public  void desce(int andar){
+        if (andarAtual > 0){
+            if (andarAtual - andar >0){
+                andarAtual -= andar;
+            }else{
+                System.out.println("Não é possível descer a quantidade de " + andar + " andares");
+                System.out.println("Ainda não construímos o tobogã pro inferno");
             }
         }
     }
