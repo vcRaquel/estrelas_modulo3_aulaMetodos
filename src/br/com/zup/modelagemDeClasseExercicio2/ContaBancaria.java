@@ -3,9 +3,9 @@ package br.com.zup.modelagemDeClasseExercicio2;
 //Crie uma classe referente à uma conta bancária, que possui como atributos
 // o seu número, saldo e o nome do correntista.
 public class ContaBancaria {
-    int numeroDaConta;
-    double saldo;
-    String nomeCorrentista;
+    private int numeroDaConta;
+    private double saldo;
+    private String nomeCorrentista;
 
     public ContaBancaria(){
 
@@ -16,6 +16,27 @@ public class ContaBancaria {
         this.numeroDaConta = numeroDaConta;
         this.saldo = saldo;
     }
+
+//    public int getNumeroDaConta(){
+//        return numeroDaConta;
+//    }
+//    public double getSaldo(){
+//        return saldo;
+//    }
+//    public String getNomeCorrentista(){
+//        return nomeCorrentista;
+//    }
+//
+//    public void setNumeroDaConta(int numeroDaConta){
+//        this.numeroDaConta = numeroDaConta;
+//    }
+//    public void setSaldo(double saldo){
+//        this.saldo = saldo;
+//    }
+//    public void setNomeCorrentista(String nomeCorrentista){
+//        this.nomeCorrentista = nomeCorrentista;
+//    }
+
     // Crie também o método saque() que serve para retirar o certo valor do saldo,
     public void saque(double valorSaque){
         saldo -= valorSaque;
