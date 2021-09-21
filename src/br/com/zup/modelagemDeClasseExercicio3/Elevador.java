@@ -54,27 +54,43 @@ public class Elevador {
         }
     }
     //- Sobe : para subir um andar (não deve subir se já estiver no último andar);
+    //Refazer xxxxxxx o número informado é do andar destino, substituir andar atual pelo número informado xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+//    public void sobe(int andar){
+//        if (andarAtual < totalAndares){
+//            if (andarAtual + andar < totalAndares){
+//                andarAtual += andar;
+//            } else{
+//                System.out.println("Não é possível subir a quantidade de " + andar + " andares");
+//                System.out.println("O total de andares do edifício é de " + totalAndares + " andares");
+//                System.out.println("Como estamos no andar " + andarAtual+ " essa solicitação extrapolaria a quantidade de andares disponíveis.");
+//                System.out.println("--------------------------------------------------------------------------------------------------------------");
+//            }
+//        }
+//    }
     public void sobe(int andar){
-        if (andarAtual < totalAndares){
-            if (andarAtual + andar < totalAndares){
-                andarAtual += andar;
-            } else{
-                System.out.println("Não é possível subir a quantidade de " + andar + " andares");
-                System.out.println("O total de andares do edifício é de " + totalAndares + " andares");
-                System.out.println("Como estamos no andar " + andarAtual+ " essa solicitação extrapolaria a quantidade de andares disponíveis.");
-                System.out.println("--------------------------------------------------------------------------------------------------------------");
-            }
+        if (andar>totalAndares){
+            System.out.println("Não é possível ir até o andar " + andar +" o edifício tem " + totalAndares + " andares");
+        }else{
+            andarAtual = andar;
         }
     }
     //- Desce : para descer um andar (não deve descer se já estiver no térreo);
-    public  void desce(int andar){
-        if (andarAtual > 0){
-            if (andarAtual - andar >0){
-                andarAtual -= andar;
-            }else{
-                System.out.println("Não é possível descer a quantidade de " + andar + " andares");
-                System.out.println("Ainda não construímos o tobogã pro inferno");
-            }
+    //Refazer xxxxxxx o número informado é do andar destino, substituir andar atual pelo número informado xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+//    public  void desce(int andar){
+//        if (andarAtual > 0){
+//            if (andarAtual - andar >0){
+//                andarAtual -= andar;
+//            }else{
+//                System.out.println("Não é possível descer a quantidade de " + andar + " andares");
+//                System.out.println("Ainda não construímos o tobogã pro inferno");
+//            }
+//        }
+//    }
+    public void desce(int andar){
+        if (andar < 0 || andarAtual == 0){
+            System.out.println("Não é possível ir até o andar " + andar + " Ainda não construímos o tobogã pro inferno");
+        }else{
+            andarAtual = andar;
         }
     }
 

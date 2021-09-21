@@ -1,7 +1,3 @@
-
-
-
-
 package br.com.zup.modelagemDeClasseExercicio4;
 
 public class Main {

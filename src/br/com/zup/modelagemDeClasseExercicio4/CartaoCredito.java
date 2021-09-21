@@ -28,7 +28,7 @@ public class CartaoCredito {
     public void realizaCompra(double compra){
         if (compra <= limite){
             saldoFatura += compra;
-            limite = limite - compra;  //ver como usar o método diminui limite pra isso
+            limite = limite - compra;  //ver como usar o método diminuiLimite pra isso
         }else {
             System.out.println("Esse valor excede o limite");
             System.out.println("------------------------------");

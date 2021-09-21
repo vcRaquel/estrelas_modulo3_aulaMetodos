@@ -27,6 +27,7 @@ public class Main {
         edificio1.mostraDados();
 
         edificio1.desce(5);
+        edificio1.mostraDados();
 
     }
 }
