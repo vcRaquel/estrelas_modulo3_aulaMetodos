@@ -23,6 +23,7 @@ public class ControleRemoto {
             tv.setVolume(volumeAtualizado);
         }
     }
+
     //- Aumentar e diminuir o número do canal em uma unidade;
     public void mudaCanal(boolean aumentaOuDiminuiCanal) {
         if (aumentaOuDiminuiCanal) {
@@ -35,10 +36,16 @@ public class ControleRemoto {
             tv.setCanal(canalAtualizado);
         }
     }
+
     //- Trocar para um canal indicado;
+    public void substituiCanal(int canal) {
+        tv.setCanal(canal);
+    }
+
     //- Consultar o valor do volume de som e o canal selecionado;
-    public void mostraDados(){
+    public void mostraDados() {
         System.out.println("O canal atual é: " + tv.getCanal());
         System.out.println("O volume atual é: " + tv.getVolume());
+        System.out.println("--------------------------------------");
     }
 }
