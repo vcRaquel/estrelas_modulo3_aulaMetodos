@@ -10,10 +10,10 @@ package br.com.zup.modelagemDeClasseExercicio3;
 //total de andares no prédio (desconsiderando o térreo), capacidade do elevador e
 //quantas pessoas estão presentes nele.
 public class Elevador {
-    int andarAtual = 0;
-    int totalAndares;
-    int capacidadePessoas;
-    int numeroPessoas;
+    private int andarAtual = 0;
+    private int totalAndares;
+    private int capacidadePessoas;
+    private int numeroPessoas;
 
     public Elevador(){
 
@@ -24,6 +24,32 @@ public class Elevador {
         this.capacidadePessoas = capacidadePessoas;
         this.numeroPessoas = numeroPessoas;
     }
+    public int getAndarAtual(){
+        return andarAtual;
+    }
+    public int getTotalAndares(){
+        return totalAndares;
+    }
+    public int getCapacidadePessoas(){
+        return capacidadePessoas;
+    }
+    public int getNumeroPessoas(){
+        return numeroPessoas;
+    }
+
+    public void setAndarAtual(){
+        this.andarAtual = andarAtual;
+    }
+    public void setTotalAndares(){
+        this.totalAndares = totalAndares;
+    }
+    public void setCapacidadePessoas(){
+        this.capacidadePessoas = capacidadePessoas;
+    }
+    public void setNumeroPessoas(){
+        this.numeroPessoas = numeroPessoas;
+    }
+
     // A classe deve também disponibilizar os seguintes métodos:
 
     //- Entra : para acrescentar uma pessoa no elevador (só deve acrescentar se ainda
@@ -53,20 +79,7 @@ public class Elevador {
             System.out.println("-------------------------------------------------------");
         }
     }
-    //- Sobe : para subir um andar (não deve subir se já estiver no último andar);
-    //Refazer xxxxxxx o número informado é do andar destino, substituir andar atual pelo número informado xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-//    public void sobe(int andar){
-//        if (andarAtual < totalAndares){
-//            if (andarAtual + andar < totalAndares){
-//                andarAtual += andar;
-//            } else{
-//                System.out.println("Não é possível subir a quantidade de " + andar + " andares");
-//                System.out.println("O total de andares do edifício é de " + totalAndares + " andares");
-//                System.out.println("Como estamos no andar " + andarAtual+ " essa solicitação extrapolaria a quantidade de andares disponíveis.");
-//                System.out.println("--------------------------------------------------------------------------------------------------------------");
-//            }
-//        }
-//    }
+
     public void sobe(int andar){
         if (andar>totalAndares){
             System.out.println("Não é possível ir até o andar " + andar +" o edifício tem " + totalAndares + " andares");
@@ -74,18 +87,7 @@ public class Elevador {
             andarAtual = andar;
         }
     }
-    //- Desce : para descer um andar (não deve descer se já estiver no térreo);
-    //Refazer xxxxxxx o número informado é do andar destino, substituir andar atual pelo número informado xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-//    public  void desce(int andar){
-//        if (andarAtual > 0){
-//            if (andarAtual - andar >0){
-//                andarAtual -= andar;
-//            }else{
-//                System.out.println("Não é possível descer a quantidade de " + andar + " andares");
-//                System.out.println("Ainda não construímos o tobogã pro inferno");
-//            }
-//        }
-//    }
+
     public void desce(int andar){
         if (andar < 0 || andarAtual == 0){
             System.out.println("Não é possível ir até o andar " + andar + " Ainda não construímos o tobogã pro inferno");
