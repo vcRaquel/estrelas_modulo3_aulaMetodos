@@ -1,7 +1,4 @@
 
-
-
-
 package br.com.zup.encapsulamentoExercicio3;
 //Crie uma classe para representar uma pessoa, com os atributos privados de
 // nome, data de nascimento e altura.

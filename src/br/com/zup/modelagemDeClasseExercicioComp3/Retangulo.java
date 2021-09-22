@@ -22,7 +22,7 @@ public class Retangulo {
     // Retornar valor dos lados
     //****************************** tirar dúvida de como dar 2 retornos ******************************************
     public double valorDosLados(){
-        return  base + altura;
+        return  base;
     }
     // calcular Área
     public void calcularArea(){
