@@ -2,11 +2,12 @@ package br.com.zup.herancaExercicioEmSala;
 
 public class Inimigos {
     private String nome;
-    private  double vida;
+    private double vida;
 
     public Inimigos() {
 
     }
+
     public Inimigos(String nome, double vida) {
         this.nome = nome;
         this.vida = vida;
@@ -28,7 +29,15 @@ public class Inimigos {
         this.vida = vida;
     }
 
-    public void trocarNome(String nome){}
-    public void receberDano(double dano){}
-    public double exibirVida(){}
+    public void trocarNome(String nome) {
+        this.nome = nome;
+    }
+
+    public void receberDano(double dano) {
+        vida = vida - dano;
+    }
+
+    public double exibirVida() {
+        return vida;
+    }
 }

@@ -1,15 +1,13 @@
 package br.com.zup.herancaExercicioEmSala;
 
-public class Magos extends Heroi{
+public class Magos extends Heroi {
 
     private double poderMagico;
-    private double aplicarMagia;
 
 
-    public Magos(String nome, double vida, double poderMagico, double aplicarMagia) {
+    public Magos(String nome, double vida, double poderMagico) {
         super(nome, vida);
         this.poderMagico = poderMagico;
-        this.aplicarMagia = aplicarMagia;
     }
 
     public double getPoderMagico() {
@@ -20,13 +18,8 @@ public class Magos extends Heroi{
         this.poderMagico = poderMagico;
     }
 
-    public double getAplicarMagia() {
-        return aplicarMagia;
-    }
 
-    public void setAplicarMagia(double aplicarMagia) {
-        this.aplicarMagia = aplicarMagia;
+    public double aplicarMagia() {
+        return poderMagico;
     }
-
-    public double aplicarMagia(){}
 }

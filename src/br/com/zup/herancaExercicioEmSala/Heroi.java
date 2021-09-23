@@ -29,7 +29,13 @@ public class Heroi {
         this.vida = vida;
     }
 
-    public void trocarNome(String nome){}
-    public void receberDano(double dano){}
-    public double exibirVida(){}
+    public void trocarNome(String nome) {
+        this.nome = nome;
+    }
+    public void receberDano(double dano) {
+        vida = vida - dano;
+    }
+    public double exibirVida() {
+        return vida;
+    }
 }
