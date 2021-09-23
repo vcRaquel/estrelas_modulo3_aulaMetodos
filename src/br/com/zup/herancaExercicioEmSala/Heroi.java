@@ -12,7 +12,7 @@ public class Heroi {
         this.nome = nome;
         this.vida = vida;
     }
-
+    // Getters e Setters
     public String getNome() {
         return nome;
     }
@@ -29,13 +29,14 @@ public class Heroi {
         this.vida = vida;
     }
 
+    // Métodos
     public void trocarNome(String nome) {
         this.nome = nome;
     }
     public void receberDano(double dano) {
-        vida = vida - dano;
+        this.vida = this.vida - dano;
     }
     public double exibirVida() {
-        return vida;
+        return this.vida;
     }
 }

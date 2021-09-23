@@ -12,7 +12,7 @@ public class Inimigos {
         this.nome = nome;
         this.vida = vida;
     }
-
+    //Getters e Setters
     public String getNome() {
         return nome;
     }
@@ -29,6 +29,7 @@ public class Inimigos {
         this.vida = vida;
     }
 
+    //Métodos
     public void trocarNome(String nome) {
         this.nome = nome;
     }

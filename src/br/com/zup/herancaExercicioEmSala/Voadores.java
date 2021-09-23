@@ -11,7 +11,7 @@ public class Voadores extends Inimigos{
         super(nome, vida);
         this.danoTiro = danoTiro;
     }
-
+    //Getters e Setters
     public double getDanoTiro() {
         return danoTiro;
     }
@@ -19,7 +19,7 @@ public class Voadores extends Inimigos{
     public void setDanoTiro(double danoTiro) {
         this.danoTiro = danoTiro;
     }
-
+    //Métodos
     public double aplicarDano(){
         return danoTiro;
     }
