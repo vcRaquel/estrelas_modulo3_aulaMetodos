@@ -28,5 +28,5 @@ public class Magos extends Heroi{
         this.aplicarMagia = aplicarMagia;
     }
 
-    private double aplicarMagia(){}
+    public double aplicarMagia(){}
 }

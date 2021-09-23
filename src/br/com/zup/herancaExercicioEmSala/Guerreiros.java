@@ -26,6 +26,7 @@ public class Guerreiros extends Heroi {
         this.aplicarDano = aplicarDano;
     }
 
-    private double aplicarDano() {
+    public double aplicarDano() {
+
     }
 }

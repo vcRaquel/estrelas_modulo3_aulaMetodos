@@ -20,5 +20,7 @@ public class Voadores extends Inimigos{
         this.danoTiro = danoTiro;
     }
 
-    private double aplicarDano(){}
+    public double aplicarDano(){
+
+    }
 }
