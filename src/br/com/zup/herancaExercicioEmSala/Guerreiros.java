@@ -1,9 +1,8 @@
 package br.com.zup.herancaExercicioEmSala;
 
-public class Guerreiros extends Heroi{
+public class Guerreiros extends Heroi {
     private double poderAtaque;
     private double aplicarDano;
-
 
     public Guerreiros(String nome, double vida, double poderAtaque, double aplicarDano) {
         super(nome, vida);
@@ -27,5 +26,6 @@ public class Guerreiros extends Heroi{
         this.aplicarDano = aplicarDano;
     }
 
-    private double aplicarDano(){}
+    private double aplicarDano() {
+    }
 }
